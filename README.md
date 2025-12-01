@@ -8,7 +8,32 @@
 </p>
 
 ## User Guidance
+<div> 1. Copy .env.example and rename to .env </div>
 
-Password created for seller would be name + 123@
+## Password User Guidance
+<div> 1. Password for admin </div>
+<div>
+    <p> username: admin@admin.com </p>
+    <p> password: password </p>
+  </div>
 
-Let say name Ezra, then the password created would be 'Ezra123@'
+<div> 2. Password for seller </div>
+<div>
+    <p> - Password created for seller would be name + 123@ </p>
+    <p> - Let say name Ezra, then the password created would be 'Ezra123@' </p>
+</div>
+
+## Failed to load issue after run php artisan serve
+
+<div> 1. Run these command </div>
+<div>
+   <p> composer install </p>
+   <p> npm install </p>
+   <p> npm run build </p>
+</div>
+
+Alternative (development mode)
+If you're only developing locally, you can instead run the Vite dev server: <b>npm run dev</b>
+
+
+
