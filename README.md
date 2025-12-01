@@ -15,7 +15,7 @@
 <div>
     <p> username: admin@admin.com </p>
     <p> password: password </p>
-  </div>
+</div>
 
 <div> 2. Password for seller </div>
 <div>
