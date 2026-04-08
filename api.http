@@ -1,0 +1,54 @@
+###
+GET http://localhost:8000/users HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://localhost:8000/users/696a6d532b7e1d407a8ce5b3 HTTP/1.1
+Content-Type: application/json
+__________________________________________________________________
+
+###
+GET http://localhost:8000/api/book HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://localhost:8000/api/book/696a6cde2b7e1d407a8ce5b2 HTTP/1.1
+Content-Type: application/json
+
+###
+POST http://localhost:8000/api/book HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+--boundary123
+Content-Disposition: multipart/form-data; name="book"
+
+&title=Almond test
+&author=Sohn Won-Pyung
+&category=Young Adult
+&description=Yunjae was born with a brain condition called Alexithymia...
+&totalPages=272
+&bookUrl=pdfs/almond.pdf
+&coverImage=images/almond.jpg
+&userId=696a6d532b7e1d407a8ce5b3
+
+--boundary123--
+
+###
+GET http://localhost:8000/bookmark HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://localhost:8000/bookmark/699eab5d56e09d9abd3088fc HTTP/1.1
+Content-Type: application/json
+__________________________________________________________________
+
+###
+POST http://localhost:8000/login HTTP/1.1
+Content-Type: application/json
+# X-XSRF-TOKEN: eyJpdiI6IjQ2Ty94Q1NtSHhWQUdjQlhDTDQ0eWc9PSIsInZhbHVlIjoiWHBNMU1KTHR2MWgyak9abnV4Q1N4eHU2R05mSXV1NUpyRnVDdU56aFBrNHc0czRsc1dQdW9EM05DTUFSUDd5dFMrOUlUR1pKN2hIN3ZYTXI3VVBLdGwrR3EwelEySGpSQXAyRGdMcExEOW54alZQM0VHb3JtclFxdzhoZ25oNWsiLCJtYWMiOiJiMDIxZWY4NGU1NmQyNTgzNzhjYmY5MGRhZTU2ODU1NmY4ZDlkMGIzYzkzZWI0ODlkYTQyM2RjODAzMDEyNTM5IiwidGFnIjoiIn0=
+# Cookie: XSRF-TOKEN=eyJpdiI6IjQ2Ty94Q1NtSHhWQUdjQlhDTDQ0eWc9PSIsInZhbHVlIjoiWHBNMU1KTHR2MWgyak9abnV4Q1N4eHU2R05mSXV1NUpyRnVDdU56aFBrNHc0czRsc1dQdW9EM05DTUFSUDd5dFMrOUlUR1pKN2hIN3ZYTXI3VVBLdGwrR3EwelEySGpSQXAyRGdMcExEOW54alZQM0VHb3JtclFxdzhoZ25oNWsiLCJtYWMiOiJiMDIxZWY4NGU1NmQyNTgzNzhjYmY5MGRhZTU2ODU1NmY4ZDlkMGIzYzkzZWI0ODlkYTQyM2RjODAzMDEyNTM5IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IjQ2Ty94Q1NtSHhWQUdjQlhDTDQ0eWc9PSIsInZhbHVlIjoiWHBNMU1KTHR2MWgyak9abnV4Q1N4eHU2R05mSXV1NUpyRnVDdU56aFBrNHc0czRsc1dQdW9EM05DTUFSUDd5dFMrOUlUR1pKN2hIN3ZYTXI3VVBLdGwrR3EwelEySGpSQXAyRGdMcExEOW54alZQM0VHb3JtclFxdzhoZ25oNWsiLCJtYWMiOiJiMDIxZWY4NGU1NmQyNTgzNzhjYmY5MGRhZTU2ODU1NmY4ZDlkMGIzYzkzZWI0ODlkYTQyM2RjODAzMDEyNTM5IiwidGFnIjoiIn0=
+
+{
+  "email": "admin@admin.com",
+  "password": "password"
+}
